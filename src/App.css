@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+#root {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #7f5af0, #ff6ac1);
+  display: flex;
+}
+
+form,
+.submittedInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 90%);
+  width: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+form label {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  width: 90%;
+}
+form input {
+  font-size: 1.5em;
+  background-color: hsl(0, 0%, 20%);
+  margin-bottom: 1em;
+  width: 90%;
+  color: hsl(0, 0%, 75%);
+  border: none;
+  border-radius: 5px;
+  height: 2em;
+}
+form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px hsl(0, 0%, 60%);
+}
+.submitbtn {
+  background-color: hsl(127, 84%, 45%);
+  color: hsl(0, 0%, 90%);
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submitbtn:hover {
+  background-color: hsl(0, 0%, 20%);
+  border: hsl(127, 84%, 45%) solid 2px;
+}
+.submitbtn:active {
+  background-color: hsl(127, 84%, 45%);
+  border: hsl(127, 84%, 45%) solid 2px;
+  transition: 0.3s ease;
+}
+.submitbtn:disabled {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 50%);
+  cursor: not-allowed;
+  border: none;
+}
+
+.submittedInfo {
+  margin-left: 20px;
+  border-radius: 10px;
+  align-items: flex-start;
+  padding: 40px;
+}
+.submittedInfo p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: hsl(0, 0%, 75%);
+}
+.submittedInfo h2 {
+  margin-bottom: 1em;
+  color: hsl(127, 84%, 45%);
+}
+.submittedInfo button {
+  background-color: hsl(0, 0%, 10%);
+  color: hsl(0, 100%, 50%);
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  border: 2px solid hsl(0, 100%, 50%);
+  border-radius: 5px;
+}
+.submittedInfo button:hover {
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 0%, 10%);
+}
